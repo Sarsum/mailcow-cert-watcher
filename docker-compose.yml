@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  mailcow-cert-watcher:
+    image: sarsum/mailcow-cert-watcher
+    volumes:
+      - /opt/mailcow-dockerized/data/assets/ssl:/ssl-folder:rw
+      - /var/run/docker.sock:/var/run/docker.sock:rw
